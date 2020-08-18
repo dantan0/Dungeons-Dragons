@@ -1,0 +1,19 @@
+<h1>View <%= @book.name %></h1>
+
+<%= link_to "All Books", books_path %>
+<%= link_to "Home", root_path %>
+
+<table>
+    <% @book.spells.each do |spell| %>
+    <tr>
+        <td>
+            <%= spell.name %>
+        </td>
+        <td>
+            <%= link_to "Remove Spell", delete_spell_from_book_path(:b_id => @book.id, :s_id => spell.id) %>
+        </td>
+    </tr>
+    <% end %>
+</table>
+
+<%= link_to "Add Spell", new_spellbook_path(:b_id => @book.id) %>

@@ -1,0 +1,44 @@
+<%= form_with(model: @spell, local: true) do |form| %>
+
+    <div>
+        <%= form.label "Level: " %>
+        <%= form.select :level, (0..9) %>
+    </div>
+
+    <div>
+        <%= form.label "Name: " %>
+        <%= form.text_field :name %>
+    </div>
+
+    <div>
+        <%= form.label "School: " %>
+        <%= form.select(:school, Spell.school_select) %>
+    </div>
+
+    <div>
+        <%= form.label "Concentration: " %>
+        <%= form.radio_button(:concentration, "Yes", :value => true) %>
+        <%= form.label(:concentration, "Yes") %>
+        <%= form.radio_button(:concentration, "No", :value => false) %>
+        <%= form.label(:concentration, "No") %>
+    </div>
+
+    <%= fields_for :spellclasses do |p| %>
+    <div>
+        <%= p.label "Classes: " %>
+        <% arr = ["Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Wizard", "Warlock"] %>
+        <% i = 0 %>
+        <%= while i < 7 do %>
+            <%= p.check_box(:spell) %>
+            <%= p.label(arr[i]) %>
+            <% i += 1 %>
+        <% end %>
+    </div>
+    <% end %>
+
+    <div>
+        <%= form.label "Description: " %> <br><br>
+        <%= form.text_area :description, size: "60x12" %>
+    </div>
+    <%= form.submit "Submit" %>
+<% end %>

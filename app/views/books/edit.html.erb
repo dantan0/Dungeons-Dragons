@@ -1,0 +1,17 @@
+<h1>Add <%= @spell.name%> to Book</h1>
+
+<%= link_to "All Spells", spells_path %>
+<%= link_to "Home", root_path %>
+
+<div>
+    <%= flash[:notice] %>
+</div>
+
+<%= form_with(local: true, method: :get, :url => add_spell_to_book_path) do |form| %>
+<div>
+    <%= form.label "Select Book: " %>
+    <%= form.select(:book_id, Book.select_books) %>
+</div>
+    <%= form.hidden_field :spell_id, :value => @spell.id %>
+    <%= form.submit "Submit" %>
+<% end %>

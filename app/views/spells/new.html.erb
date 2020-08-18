@@ -1,0 +1,9 @@
+<h1>Create New</h1>
+
+<%= link_to "All Spells", spells_path %>
+<%= link_to "Home", root_path %>
+
+<p><%= flash[:notice]%></p>
+
+<p> Fields for a new spell: </p>
+<%= render 'form', spell: @spell %>

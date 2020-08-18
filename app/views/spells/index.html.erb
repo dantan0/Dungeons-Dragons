@@ -1,0 +1,31 @@
+<h1>All Spells</h1>
+
+<p><%= link_to "Home", root_path%></p>
+<p><%= link_to "Create New", new_spell_path%></p>
+
+<p><%= flash[:notice]%></p>
+
+<table>
+    <tr>
+        <th>Name:</th>
+        <th>Level:</th>
+        <th>School:</th>
+        <th>Concentration:</th>
+    </tr>
+    <% @spells.each do |spell| %>
+    <tr>
+        <td><%= link_to spell.name, spell%></td>
+        <td><%= spell.level %></td>
+        <td><%= spell.school %></td>
+        <td>
+            <% if spell.concentration == true %>
+                <%= "Yes" %>
+            <% else %>
+                <%= "No" %>
+            <% end %>
+        </td>
+        <td><%= link_to "Edit", edit_spell_path(spell) %></td>
+        <td><%= link_to "Add to Book", edit_book_path(:id => spell.id) %></td>
+    </tr>
+    <% end %>
+</table>

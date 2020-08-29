@@ -6,3 +6,13 @@
 div {
     margin-top: 1%;
 }
+
+button a:link{
+  text-decoration: none;
+  color: black
+}
+
+button a:visited{
+  text-decoration: none;
+  color: black
+}

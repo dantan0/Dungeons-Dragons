@@ -24,8 +24,8 @@
                 <%= "No" %>
             <% end %>
         </td>
-        <td><%= link_to "Edit", edit_spell_path(spell) %></td>
-        <td><%= link_to "Add to Book", edit_book_path(:id => spell.id) %></td>
+        <td><button><%= link_to "Edit", edit_spell_path(spell) %></button></td>
+        <td><button><%= link_to "Add to Book", edit_book_path(:id => spell.id)%></button></td>
     </tr>
     <% end %>
 </table>

@@ -32,7 +32,7 @@ class BooksController < ApplicationController
   def show
       @book = Book.find(params[:id])
   end
-      
+
   def update
   end
 
@@ -45,7 +45,7 @@ class BooksController < ApplicationController
       end
       redirect_to books_path
   end
-    
+
   def delete_spell_from_book
       @book = Book.find(params[:b_id])
       @spell = Spell.find(params[:s_id])
@@ -56,7 +56,7 @@ class BooksController < ApplicationController
       end
       redirect_to books_path
   end
-    
+
   def add_spell_to_book
       @spell = Spell.find(params[:spell_id])
       @book = Book.find(params[:book_id])
@@ -72,12 +72,12 @@ class BooksController < ApplicationController
       end
       redirect_to books_path
   end
-    
+
   private
     def book_params
         params.require(:book).permit(:name)
     end
-    
+
     def spell_params
         params.require(:spell).permit(:name, :level, :school, :concentration, :description, :spellclasses)
     end

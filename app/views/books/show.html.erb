@@ -10,10 +10,10 @@
             <%= spell.name %>
         </td>
         <td>
-            <%= link_to "Remove Spell", delete_spell_from_book_path(:b_id => @book.id, :s_id => spell.id) %>
+            <button><%= link_to "Remove Spell", delete_spell_from_book_path(:b_id => @book.id, :s_id => spell.id) %></button>
         </td>
     </tr>
     <% end %>
 </table>
 
-<%= link_to "Add Spell", new_spellbook_path(:b_id => @book.id) %>
+<button> <%= link_to "Add Spell", new_spellbook_path(:b_id => @book.id) %> </button>

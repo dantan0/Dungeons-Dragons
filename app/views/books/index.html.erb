@@ -10,12 +10,12 @@
         <th>Spell Count: </th>
         <th>Title:</th>
     </tr>
-    
+
     <% @books.each do |book| %>
     <tr>
         <td><%= book.spells.count %></td>
         <td><%= link_to book.name, book%></td>
-        <td><%= link_to 'Delete Book', books_destroy_path(:id => book.id) %></td>
+        <td><button><%= link_to 'Delete Book', books_destroy_path(:id => book.id) %></button></td>
     </tr>
     <% end %>
 </table>

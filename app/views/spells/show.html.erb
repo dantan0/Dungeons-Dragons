@@ -28,4 +28,4 @@
     </tr>
 </table>
 
-<%= link_to "Add #{@spell.name} to Book", edit_book_path %>
+<button><%= link_to "Add #{@spell.name} to Book", edit_book_path(:id => @spell.id)%></button>

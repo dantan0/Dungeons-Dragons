@@ -6,6 +6,8 @@
 <p><%= flash[:notice]%></p>
 <%= render 'form', spell: @spell %>
 
-<%= form_with(model:@spell, method: :delete, local:true) do |f| %>
-    <%= f.submit 'Delete' %>
-<% end %>
+<div>
+  <%= form_with(model:@spell, method: :delete, local:true) do |f| %>
+      <%= f.submit 'Delete' %>
+  <% end %>
+</div>

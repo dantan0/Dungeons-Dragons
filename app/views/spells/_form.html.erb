@@ -17,24 +17,11 @@
 
     <div>
         <%= form.label "Concentration: " %>
-        <%= form.radio_button(:concentration, "Yes", :value => true) %>
-        <%= form.label(:concentration, "Yes") %>
-        <%= form.radio_button(:concentration, "No", :value => false) %>
-        <%= form.label(:concentration, "No") %>
+        <%= form.radio_button(:concentration, true) %>
+        <%= form.label(:concentration, "Yes", :value => "true") %>
+        <%= form.radio_button(:concentration, false) %>
+        <%= form.label(:concentration, "No", :value => "false") %>
     </div>
-
-    <%= fields_for :spellclasses do |p| %>
-    <div>
-        <%= p.label "Classes: " %>
-        <% arr = ["Bard", "Cleric", "Druid", "Paladin", "Ranger", "Sorcerer", "Wizard", "Warlock"] %>
-        <% i = 0 %>
-        <%= while i < 7 do %>
-            <%= p.check_box(:spell) %>
-            <%= p.label(arr[i]) %>
-            <% i += 1 %>
-        <% end %>
-    </div>
-    <% end %>
 
     <div>
         <%= form.label "Description: " %> <br><br>

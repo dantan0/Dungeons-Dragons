@@ -4,7 +4,7 @@ class CreateSpells < ActiveRecord::Migration[6.0]
       t.string :name, null:false
       t.integer :level, null:false
       t.string :school, null:false
-      t.boolean :concentration, null:false
+      t.boolean :concentration, :default => false
       t.text :description, null:false
 
       t.timestamps

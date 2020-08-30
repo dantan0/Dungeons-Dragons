@@ -2,17 +2,3 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-
-div {
-    margin-top: 1%;
-}
-
-button a:link{
-  text-decoration: none;
-  color: black
-}
-
-button a:visited{
-  text-decoration: none;
-  color: black
-}

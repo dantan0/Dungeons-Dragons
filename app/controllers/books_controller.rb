@@ -31,6 +31,7 @@ class BooksController < ApplicationController
 
   def show
       @book = Book.find(params[:id])
+      @spells = @book.spells
   end
 
   def update

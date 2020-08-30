@@ -3,8 +3,9 @@
 <%= link_to "All Books", books_path %>
 <%= link_to "Home", root_path %>
 
+<%= flash[:notice] %>
 <table>
-    <% @book.spells.each do |spell| %>
+    <% @spells.each do |spell| %>
     <tr>
         <td>
             <%= spell.name %>

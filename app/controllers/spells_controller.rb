@@ -68,7 +68,7 @@ class SpellsController < ApplicationController
           render :edit
       end
   end
-  
+
   private
     def spell_params
         params.require(:spell).permit(:name, :level, :school, :concentration, :description, :spellclasses)

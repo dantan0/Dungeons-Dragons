@@ -1,0 +1,28 @@
+<%= form_with(local: true, method: "get", :url => books_show_path) do |form| %>
+
+<div>
+  <%= form.label "Levels: " %>
+  <% Spell.all_levels.each do |level| %>
+    <%= form.label level %>
+    <%= form.check_box :level => level %>
+  <% end %>
+</div>
+
+<div>
+  <%= form.label "School: " %>
+  <% Spell.all_schools.each do |school| %>
+    <%= form.label school %>
+    <%= form.check_box :school => school %>
+  <% end %>
+<div>
+
+<div>
+  <%= form.label "Concentration" %>
+  <%= form.label "Yes" %>
+  <%= form.check_box :concentration => "Yes" %>
+  <%= form.label "No" %>
+  <%= form.check_box :concentration => "No" %>
+</div>
+  <%= form.hidden_field :id, :value => @book.id %>
+  <%= form.submit "Apply filter" %>
+<% end %>

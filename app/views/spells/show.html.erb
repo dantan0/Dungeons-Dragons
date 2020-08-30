@@ -1,7 +1,7 @@
 <h1>View <%= @spell.name %></h1>
 
-<%= link_to 'All Spells', spells_path %>
-<%= link_to 'Home', root_path %>
+<p> <%= link_to 'All Spells', spells_path %> </p>
+<p> <%= link_to 'Home', root_path %> </p>
 
 <table>
     <tr>
@@ -28,4 +28,6 @@
     </tr>
 </table>
 
-<button><%= link_to "Add #{@spell.name} to Book", edit_book_path(:id => @spell.id)%></button>
+<div>
+  <button><%= link_to "Add #{@spell.name} to Book", edit_book_path(:id => @spell.id)%></button>
+</div>

@@ -1,7 +1,7 @@
 <h1>Edit <%= @spell.name %></h1>
 
-<%= link_to "All Spells", spells_path %>
-<%= link_to "Home", root_path %>
+<p> <%= link_to "All Spells", spells_path %> <p>
+<p> <%= link_to "Home", root_path %> </p>
 
 <p><%= flash[:notice]%></p>
 <%= render 'form', spell: @spell %>

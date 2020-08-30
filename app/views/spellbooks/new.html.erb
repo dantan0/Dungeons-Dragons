@@ -1,7 +1,7 @@
 <h1>Add Spell to <%= @book.name %></h1>
 
-<%= link_to "Back to #{@book.name}", books_path %>
-<%= link_to "Home", root_path %>
+<p> <%= link_to "Back to #{@book.name}", books_path %> </p>
+<p> <%= link_to "Home", root_path %> </p>
 
 <table>
     <% Spell.order(:name).each do |spell| %>
@@ -13,8 +13,10 @@
             <% if @book.spells.include?(spell) %>
                 <%= "Already in book" %>
             <% else %>
+          <button>
                 <%= link_to "Add to Book", add_spell_to_book_path(:book_id => @book.id, :spell_id => spell.id) %>
             <% end %>
+          </button>
         </td>
     </tr>
     <% end %>

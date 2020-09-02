@@ -71,13 +71,17 @@ li a:hover {
   color: #000;
 }
 
+li a {
+  color: black;
+}
+
 nav a::before {
   content: '';
   display: block;
   height: 5px;
   background: #444;
   position: absolute;
-  top: 0;
+  top: 0%;
   width: 0%;
   transition: all ease-in-out 250ms;
 }

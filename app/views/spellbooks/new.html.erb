@@ -1,7 +1,14 @@
-<h1>Add Spell to <%= @book.name %></h1>
-
-<p> <%= link_to "Back to #{@book.name}", books_path %> </p>
-<p> <%= link_to "Home", root_path %> </p>
+<header>
+  <div class = "container">
+    <h1 class = "logo">Add Spell to <%= @book.name %></h1>
+    <nav>
+      <ul>
+        <li> <%= link_to "Back to #{@book.name}", books_path %>  </li>
+        <li> <%= link_to "Home", root_path %> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <table>
     <% Spell.order(:name).each do |spell| %>

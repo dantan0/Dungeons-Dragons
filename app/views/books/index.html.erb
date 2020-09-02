@@ -1,7 +1,14 @@
-<h1>All Books</h1>
-
-<p> <%= link_to "Home", root_path %> </p>
-<p> <%= link_to "Create new", new_book_path %> </p>
+<header>
+  <div class = "container">
+    <h1 class = "logo">All Books</h1>
+    <nav>
+      <ul>
+        <li> <%= link_to "Home", root_path%> </li>
+        <li> <%= link_to "Create New", new_book_path%> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <p><%= flash[:notice]%></p>
 

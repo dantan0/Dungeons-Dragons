@@ -1,9 +1,17 @@
-<h1>Edit <%= @spell.name %></h1>
+<header>
+  <div class = "container">
+    <h1 class = "logo">Edit <%= @spell.name %></h1>
+    <nav>
+      <ul>
+        <li> <%= link_to "All Spells", spells_path %> </li>
+        <li> <%= link_to "Home", root_path %> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<p> <%= link_to "All Spells", spells_path %> <p>
-<p> <%= link_to "Home", root_path %> </p>
-
-<p><%= flash[:notice]%></p>
+<p> <%= flash[:notice]%> </p>
+<h2 class = "form"> Fields of <%= @spell.name %> </h2>
 <%= render 'form', spell: @spell %>
 
 <div>

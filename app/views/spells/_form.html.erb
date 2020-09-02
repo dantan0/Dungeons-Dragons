@@ -1,21 +1,21 @@
 <%= form_with(model: @spell, local: true) do |form| %>
-
-    <div>
+<div>
+    <div class = "form">
         <%= form.label "Level: " %>
         <%= form.select :level, (0..9) %>
     </div>
 
-    <div>
+    <div class = "form">
         <%= form.label "Name: " %>
         <%= form.text_field :name %>
     </div>
 
-    <div>
+    <div class = "form">
         <%= form.label "School: " %>
         <%= form.select(:school, Spell.school_select) %>
     </div>
 
-    <div>
+    <div class = "form">
         <%= form.label "Concentration: " %>
         <%= form.radio_button(:concentration, true) %>
         <%= form.label(:concentration, "Yes", :value => "true") %>
@@ -23,9 +23,13 @@
         <%= form.label(:concentration, "No", :value => "false") %>
     </div>
 
-    <div>
+    <div class = "form">
         <%= form.label "Description: " %> <br><br>
         <%= form.text_area :description, size: "60x12" %>
     </div>
-    <%= form.submit "Submit" %>
+    
+    <div>
+      <%= form.submit "Submit" %>
+    </div>
+</div>
 <% end %>

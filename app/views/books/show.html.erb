@@ -1,7 +1,14 @@
-<h1>View <%= @book.name %></h1>
-
-<p> <%= link_to "All Books", books_path %> <p>
-<p> <%= link_to "Home", root_path %> </p>
+<header>
+  <div class = "container">
+    <h1 class = "logo">View <%= @book.name %></h1>
+    <nav>
+      <ul>
+        <li> <%= link_to "All Books", books_path %>  </li>
+        <li> <%= link_to "Home", root_path %> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <%= flash[:notice] %>
 

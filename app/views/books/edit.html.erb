@@ -1,7 +1,14 @@
-<h1>Add <%= @spell.name%> to Book</h1>
-
-<p> <%= link_to "All Spells", spells_path %> </p>
-<p> <%= link_to "Home", root_path %> </p>
+<header>
+  <div class = "container">
+    <h1 class = "logo">Add <%= @spell.name%> to Book</h1>
+    <nav>
+      <ul>
+        <li> <%= link_to "All Spells", spells_path %> </li>
+        <li> <%= link_to "Home", root_path %> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <div>
     <%= flash[:notice] %>
@@ -13,5 +20,7 @@
     <%= form.select(:book_id, Book.select_books) %>
 </div>
     <%= form.hidden_field :spell_id, :value => @spell.id %>
+<div>
     <%= form.submit "Submit" %>
+</div>
 <% end %>

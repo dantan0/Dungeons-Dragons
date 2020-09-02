@@ -2,3 +2,16 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.home {
+  background-image: url('d&d.jpg');
+  background-size: cover;
+}
+
+.home {
+  font-size: 50px;
+}
+
+h2 a:link {
+  text-decoration: none;
+}

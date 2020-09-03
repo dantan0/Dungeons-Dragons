@@ -18,6 +18,6 @@
 /config/master.key
 
 # ignore
-.DS_Store
-.keeps
+.*
+!.gitignore
 Spell

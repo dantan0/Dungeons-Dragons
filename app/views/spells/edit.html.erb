@@ -1,23 +1,25 @@
-<header>
-  <div class = "container">
-    <h1 class = "logo">Edit <%= @spell.name %></h1>
-    <nav>
-      <ul>
-        <li> <%= link_to "All Spells", spells_path %> </li>
-        <li> <%= link_to "Home", root_path %> </li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <div class = "container">
+      <h1 class = "logo">Edit <%= @spell.name %></h1>
+      <nav>
+        <ul>
+          <li> <%= link_to "All Spells", spells_path %> </li>
+          <li> <%= link_to "Home", root_path %> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <p> <%= flash[:notice]%> </p>
+
+  <h2 class = "form"> Fields of <%= @spell.name %> </h2>
+
+  <%= render 'form', spell: @spell%>
+
+  <div class = "form">
+    <%= form_with(model:@spell, method: :delete, local:true) do |f| %>
+      <%= f.submit 'Delete'%>
+    <% end %>
   </div>
-</header>
-
-<p> <%= flash[:notice]%> </p>
-
-<h2 class = "form"> Fields of <%= @spell.name %> </h2>
-
-<%= render 'form', spell: @spell%>
-
-<div class = "form">
-  <%= form_with(model:@spell, method: :delete, local:true) do |f| %>
-    <%= f.submit 'Delete'%>
-  <% end %>
-</div>
+</body>

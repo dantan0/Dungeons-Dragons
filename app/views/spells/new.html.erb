@@ -1,19 +1,21 @@
-<header>
-  <div class = "container">
-    <h1 class = "logo"> New Spell</h1>
-    <nav>
-      <ul>
-        <li> <%= link_to "All Spells", spells_path %> </li>
-        <li> <%= link_to "Home", root_path %> </li>
-      </ul>
-    </nav>
+<body>
+  <header>
+    <div class = "container">
+      <h1 class = "logo"> New Spell</h1>
+      <nav>
+        <ul>
+          <li> <%= link_to "All Spells", spells_path %> </li>
+          <li> <%= link_to "Home", root_path %> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <p><%= flash[:notice]%></p>
+
+
+  <div class = "form">
+    <h2> Fields for a new spell: </h2>
   </div>
-</header>
-
-<p><%= flash[:notice]%></p>
-
-
-<div class = "form">
-  <h2> Fields for a new spell: </h2>
-</div>
-<%= render 'form', spell: @spell %>
+  <%= render 'form', spell: @spell %>
+</body>

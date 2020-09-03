@@ -1,40 +1,44 @@
-<header>
-  <div class = "container">
-    <h1 class = "logo"><%= @spell.name %></h1>
-    <nav>
-      <ul>
-        <li> <%= link_to "All Spells", spells_path %> </li>
-        <li> <%= link_to "Home", root_path %> </li>
-      </ul>
-    </nav>
+<body>
+
+  <header>
+    <div class = "container">
+      <h1 class = "logo"><%= @spell.name %></h1>
+      <nav>
+        <ul>
+          <li> <%= link_to "All Spells", spells_path %> </li>
+          <li> <%= link_to "Home", root_path %> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <table class = "container" id = "spell-description">
+      <tr>
+          <td>Level:</td>
+          <td><%= @spell.level %></td>
+      </tr>
+      <tr>
+          <td>School:</td>
+          <td><%= @spell.school %></td>
+      </tr>
+      <tr>
+          <td>Concentration:</td>
+          <td>
+              <% if @spell.concentration == true %>
+                  <%= "Yes" %>
+              <% else %>
+                  <%= "No" %>
+              <% end %>
+          </td>
+      </tr>
+      <tr>
+          <td>Description: </td>
+          <td><%= @spell.description %></td>
+      </tr>
+  </table>
+
+  <div>
+    <button><%= link_to "Add #{@spell.name} to Book", edit_book_path(:id => @spell.id)%></button>
   </div>
-</header>
 
-<table class = "container" id = "spell-description">
-    <tr>
-        <td>Level:</td>
-        <td><%= @spell.level %></td>
-    </tr>
-    <tr>
-        <td>School:</td>
-        <td><%= @spell.school %></td>
-    </tr>
-    <tr>
-        <td>Concentration:</td>
-        <td>
-            <% if @spell.concentration == true %>
-                <%= "Yes" %>
-            <% else %>
-                <%= "No" %>
-            <% end %>
-        </td>
-    </tr>
-    <tr>
-        <td>Description: </td>
-        <td><%= @spell.description %></td>
-    </tr>
-</table>
-
-<div>
-  <button><%= link_to "Add #{@spell.name} to Book", edit_book_path(:id => @spell.id)%></button>
-</div>
+</body>

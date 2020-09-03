@@ -36,7 +36,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use asset pipeline to enable JS and CSS assets
-gem 'sass-rails'
+gem 'sass-rails', '>= 3.2'
 
-# add bootstrap form helper
-gem "bootstrap_form", "~> 4.0"
+# add bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'

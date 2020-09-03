@@ -17,6 +17,17 @@
 body {
   text-align: center;
   font-family: sans-serif;
+  background-image: url('d&d3.jpg');
+  background-size: cover;
+  font-weight: 500;
+  color: red;
+  font-size: 20px;
+ }
+
+ h2 {
+   color: black;
+   font-size: 25px;
+   text-shadow: 0.8px 0.8px #ff0000;
  }
 
  div {
@@ -29,7 +40,8 @@ body {
 }
 
 header {
-  background: white;
+  background: black;
+  padding: 2.5%;
 }
 
 header::after {
@@ -42,6 +54,7 @@ header::after {
   float: left;
   font-size: 30px;
   margin: 4px;
+  color: white;
 }
 
 nav {
@@ -63,24 +76,24 @@ nav li {
 
 li a:link {
   text-decoration: none;
-  color: #444;
+  color: white;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 li a:hover {
-  color: #000;
+  color: red;
 }
 
 li a {
-  color: black;
+  color: white;
 }
 
 nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background: #444;
+  background: white;
   position: absolute;
   top: 0%;
   width: 0%;
@@ -96,10 +109,7 @@ nav a:hover::before {
    margin-right: 30vw;
    margin-top: 1.5%;
    text-align: left;
- }
-
- h2 {
-   font-size: 25px;
+   padding-top: 5px;
  }
 
  table {
@@ -132,7 +142,7 @@ nav a:hover::before {
  }
 
  th {
-   font-size: 20px;
+   font-size: 25px;
  }
 
  tr {
@@ -150,11 +160,32 @@ nav a:hover::before {
  }
 
  td a:link {
-   text-decoration: underline;
+   text-decoration: none;
    color: black;
+   text-shadow: 0.8px 0.8px #ff0000;
  }
 
  td a:visited {
-   text-decoration: underline;
+   text-decoration: none;
    color: black;
+   text-shadow: 0.8px 0.8px #ff0000;
+ }
+
+ td a:hover {
+   color: red;
+ }
+
+ button a {
+   text-shadow: 0.8px 0.8px #ff0000;
+ }
+
+ button {
+    font-size: 20px;
+    padding: 6px 6px;
+    border-radius: 8px;
+    color: white;
+ }
+
+ #spell-description {
+   color: white;
  }

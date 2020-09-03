@@ -1,11 +1,12 @@
 <%= form_with(model: @book, local: true) do |form| %>
 
-<div>
-  <%= form.label "Name: " %>
+<div class = "form">
+  <p><%= form.label "Name: " %></p>
   <%= form.text_field :name %>
 </div>
 
-<div>
+<div class = "form">
   <%= form.submit "Submit" %>
 </div>
+
 <% end %>

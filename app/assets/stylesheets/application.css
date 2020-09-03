@@ -40,7 +40,8 @@ header::after {
 
 .logo {
   float: left;
-  font-size: 25px;
+  font-size: 30px;
+  margin: 4px;
 }
 
 nav {
@@ -48,7 +49,7 @@ nav {
 }
 
 nav ul {
-  margin: 0;
+  margin: 1px;
   padding: 0;
   list-style: none;
 }
@@ -56,7 +57,7 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 20px;
+  padding-top: 15px;
   position: relative;
 }
 
@@ -103,18 +104,39 @@ nav a:hover::before {
 
  table {
    margin: auto auto;
+   margin-top: 3%;
+   border-collapse: collapse;
+   min-width: 300px;
  }
 
- tr {
-   text-align: left;
+ .spell-table td {
+   padding: 10px 15px;
+ }
+
+ .spell-table th {
+   padding: 10px 15px;
+ }
+
+ .book-table td {
+   padding: 10px 25px;
+ }
+
+ .book-table th {
+   padding: 10px 25px;
+ }
+
+ td, th {
+   padding-top: 20px;
+   padding-left: 5px;
+   padding-right: 10px;
  }
 
  th {
    font-size: 20px;
  }
 
- td, th {
-   padding: 5px;
+ tr {
+   text-align: left;
  }
 
  button a:link {
@@ -125,4 +147,14 @@ nav a:hover::before {
  button a:visited {
    text-decoration: none;
    color: black
+ }
+
+ td a:link {
+   text-decoration: underline;
+   color: black;
+ }
+
+ td a:visited {
+   text-decoration: underline;
+   color: black;
  }

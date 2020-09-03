@@ -1,6 +1,6 @@
 <header>
   <div class = "container">
-    <h1 class = "logo">View <%= @book.name %></h1>
+    <h1 class = "logo"><%= @book.name %></h1>
     <nav>
       <ul>
         <li> <%= link_to "All Books", books_path %>  </li>
@@ -12,7 +12,7 @@
 
 <%= flash[:notice] %>
 
-<table>
+<table class = "show-spells">
     <% @spells.each do |spell| %>
     <tr>
         <td>

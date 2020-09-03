@@ -9,7 +9,7 @@
 }
 
 .home {
-  font-size: 50px;
+  font-size: 33px;
 }
 
 h2 a:link {
@@ -23,5 +23,4 @@ h2 a {
 
 h2 a:hover {
   color: white;
-  transition: all ease-in-out 50ms;
 }

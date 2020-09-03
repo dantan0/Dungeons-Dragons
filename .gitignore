@@ -11,9 +11,18 @@
 /log/*
 /tmp/*
 
-
 /public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# ignore
+/.DS_Store
+/.keeps
+/.ruby-version
+/config.ru
+/Gemfile
+/Gemfile.lock
+/Rakefile
+/Spell

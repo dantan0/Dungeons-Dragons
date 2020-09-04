@@ -141,11 +141,12 @@ nav a:hover::before {
    text-align: left;
    padding-top: 5px;
    font-size: 20px;
+   min-width: 60vw;
  }
 
  table {
    margin: auto auto;
-   margin-top: 7%;
+   margin-top: 10%;
    margin-bottom: 2%;
    border-collapse: collapse;
    min-width: 300px;
@@ -227,5 +228,5 @@ nav a:hover::before {
  }
 
  .top {
-   margin-top: 8%;
+   margin-top: 10%;
  }

@@ -39,7 +39,7 @@ body {
 h2 {
   color: black;
   font-size: 35px;
-  text-shadow: 0.8px 0.8px #ff0000;
+  text-shadow: 2px 2px #ff0000;
 }
 
 h2 a:link {
@@ -57,7 +57,7 @@ h2 a {
 
 h3 {
   color: black;
-  text-shadow: 0.8px 0.8px #ff0000;
+  text-shadow: 2px 2px #ff0000;
 }
 
 div {
@@ -206,7 +206,7 @@ nav a:hover::before {
 
  button a:link {
    text-decoration: none;
-   color: black
+   color: black;
  }
 
  button a:visited {
@@ -215,7 +215,7 @@ nav a:hover::before {
  }
 
  button a {
-   text-shadow: 0.8px 0.8px #ff0000;
+   text-shadow: 1px 1px #FF0000;
  }
 
  button a:hover {

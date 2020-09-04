@@ -20,6 +20,4 @@
 # ignore
 .*
 !.gitignore
-Rakefile
-config.ru
 Spell

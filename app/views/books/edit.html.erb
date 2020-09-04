@@ -1,6 +1,5 @@
 <body>
   <header>
-    <div class = "container">
       <h1 class = "logo">Add <%= @spell.name%> to Book</h1>
       <nav>
         <ul>
@@ -8,15 +7,12 @@
           <li> <%= link_to "Home", root_path %> </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <div>
-      <%= flash[:notice] %>
-  </div>
+  <h2 class = "top"> <%= flash[:notice] %> </h2>
 
   <%= form_with(local: true, method: :get, :url => add_spell_to_book_path) do |form| %>
-  <div>
+  <div class = "top">
     <h2>
         <%= form.label "Select a book: " %>
         <%= form.select(:book_id, Book.select_books) %>

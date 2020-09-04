@@ -1,6 +1,5 @@
 <body>
   <header>
-    <div class = "container">
       <h1 class = "logo">Add Spell to <%= @book.name %></h1>
       <nav>
         <ul>
@@ -8,10 +7,9 @@
           <li> <%= link_to "Home", root_path %> </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <table>
+  <table class = "spell-table">
       <% Spell.order(:name).each do |spell| %>
       <tr>
           <td>

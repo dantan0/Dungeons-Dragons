@@ -15,8 +15,12 @@ h1 {
   font-size: 66px;
 }
 
+.home h1 {
+  margin-bottom: 20px;
+}
+
 .home h2 {
-  margin: 40px;
+  margin: 60px;
 }
 
 body {
@@ -27,7 +31,6 @@ body {
   font-weight: 500;
   color: red;
   font-size: 20px;
-  margin: 0;
  }
 
 h2 {
@@ -54,20 +57,18 @@ h3 {
   text-shadow: 0.8px 0.8px #ff0000;
 }
 
- div {
+div {
    margin-top: 2%;
    margin-bottom: 2%;
- }
-
-.container {
-  width: 90%;
-  margin: 0 auto;
 }
 
 header {
-  background: black;
-  padding: 1.5%;
   margin: 0;
+  padding: 0.3%;
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header::after {
@@ -79,17 +80,19 @@ header::after {
 .logo {
   float: left;
   font-size: 35px;
-  margin: 3px;
   color: white;
+  margin: 1%;
+  margin-left: 5%;
 }
 
 nav {
-  float: right;
+  float:right;
+  margin-right: 5%;
 }
 
 nav ul {
-  margin: 1px;
-  padding: 0;
+  margin: 5px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -98,6 +101,10 @@ nav li {
   margin-left: 70px;
   padding-top: 15px;
   position: relative;
+}
+
+li a {
+  color: white;
 }
 
 li a:link {
@@ -111,19 +118,15 @@ li a:hover {
   color: red;
 }
 
-li a {
-  color: white;
-}
-
 nav a::before {
-  content: '';
+  content: "";
   display: block;
-  height: 5px;
   background: white;
-  position: absolute;
+  height: 5px;
   top: 0%;
   width: 0%;
   transition: all ease-in-out 250ms;
+  position: absolute;
 }
 
 nav a:hover::before {
@@ -141,7 +144,8 @@ nav a:hover::before {
 
  table {
    margin: auto auto;
-   margin-top: 3%;
+   margin-top: 7%;
+   margin-bottom: 2%;
    border-collapse: collapse;
    min-width: 300px;
  }
@@ -213,10 +217,14 @@ nav a:hover::before {
  button {
     font-size: 20px;
     padding: 6px 6px;
-    border-radius: 8px;
+    border-radius: 16px;
     background-color: white;
  }
 
  #spell-description {
    color: white;
+ }
+
+ .top {
+   margin-top: 8%;
  }

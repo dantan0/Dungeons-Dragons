@@ -1,6 +1,5 @@
 <body>
   <header>
-    <div class = "container">
       <h1 class = "logo"> New Book</h1>
       <nav>
         <ul>
@@ -8,11 +7,9 @@
           <li> <%= link_to "Home", root_path %> </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <h2> Enter a new book: </h2>
+  <h2 class = "top"> <%= flash[:notice] %> </h2>
+  <h2 class = "top"> Enter a new book: </h2>
   <%= render 'form', book: @book %>
-
-  <%= flash[:notice] %>
 </body>

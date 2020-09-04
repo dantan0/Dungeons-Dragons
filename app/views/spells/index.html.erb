@@ -1,6 +1,5 @@
 <body>
   <header>
-    <div class = "container">
       <h1 class = "logo">All Spells</h1>
       <nav>
         <ul>
@@ -8,10 +7,9 @@
           <li> <%= link_to "Create New", new_spell_path%> </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <p><%= flash[:notice]%></p>
+  <h2 class = "top"><%= flash[:notice]%></h2>
 
   <table class = "spell-table">
       <tr>

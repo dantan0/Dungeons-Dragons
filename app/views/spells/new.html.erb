@@ -1,6 +1,5 @@
 <body>
   <header>
-    <div class = "container">
       <h1 class = "logo"> New Spell</h1>
       <nav>
         <ul>
@@ -8,12 +7,9 @@
           <li> <%= link_to "Home", root_path %> </li>
         </ul>
       </nav>
-    </div>
   </header>
 
-  <p><%= flash[:notice]%></p>
-
-
-  <h2> Fields for a new spell: </h2>
+  <h2 class = "top"><%= flash[:notice]%></h2>
+  <h2 class = "top"> Fields for a new spell: </h2>
   <%= render 'form', spell: @spell %>
 </body>

@@ -2,8 +2,8 @@
 
 Time to cast a spell and create a spellbook!
 
-- Backend time spent: 20 hrs
-- Frontend time spent: 10 hrs
+- Backend time spent: 25 hrs
+- Frontend time spent: 15 hrs
 
 
 Deployed URL:

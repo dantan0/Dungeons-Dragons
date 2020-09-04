@@ -47,12 +47,12 @@ h2 a:link {
   text-transform: uppercase;
 }
 
-h2 a {
-  color: black;
-}
-
 h2 a:hover {
   color: white;
+}
+
+h2 a {
+  color: black;
 }
 
 h3 {
@@ -151,7 +151,11 @@ nav a:hover::before {
    margin-top: 10%;
    margin-bottom: 2%;
    border-collapse: collapse;
-   min-width: 300px;
+ }
+
+ .spelltable {
+   margin-left: 10vw;
+   margin-right: 10vw;
  }
 
  .spell-table td {

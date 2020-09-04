@@ -137,25 +137,21 @@ nav a:hover::before {
 }
 
 .form {
-   margin-left: 30vw;
-   margin-right: 30vw;
-   margin-top: 2%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5%;
+   width: 50%;
+   height: 15%;
    text-align: left;
-   padding-top: 5px;
-   font-size: 20px;
-   min-width: 60vw;
  }
 
  table {
-   margin: auto auto;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
    margin-top: 10%;
    margin-bottom: 2%;
    border-collapse: collapse;
- }
-
- .spelltable {
-   margin-left: 10vw;
-   margin-right: 10vw;
  }
 
  .spell-table td {

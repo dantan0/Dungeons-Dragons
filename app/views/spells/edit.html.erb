@@ -13,13 +13,8 @@
 
   <p> <%= flash[:notice]%> </p>
 
-  <h2 class = "form"> Fields of <%= @spell.name %> </h2>
+  <h2> Fields of <%= @spell.name %> </h2>
 
   <%= render 'form', spell: @spell%>
-
-  <div class = "form">
-    <%= form_with(model:@spell, method: :delete, local:true) do |f| %>
-      <%= f.submit 'Delete'%>
-    <% end %>
-  </div>
+  
 </body>

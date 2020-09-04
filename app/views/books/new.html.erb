@@ -11,7 +11,8 @@
     </div>
   </header>
 
-  <h2> Fields for a new book: </h2>
-  <%= flash[:notice] %>
+  <h2> Enter a new book: </h2>
   <%= render 'form', book: @book %>
+
+  <%= flash[:notice] %>
 </body>

@@ -1,13 +1,39 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: "Gagalin";
+  src: url('Gagalin-Regular.otf');
+}
+
 .home {
   background-image: url('d&d.jpg');
   background-size: cover;
 }
 
-.home {
-  font-size: 33px;
+h1 {
+  font-size: 66px;
+}
+
+.home h2 {
+  margin: 40px;
+}
+
+body {
+  text-align: center;
+  font-family: "Arial";
+  background-image: url('d&d3.jpg');
+  background-size: cover;
+  font-weight: 500;
+  color: red;
+  font-size: 20px;
+  margin: 0;
+ }
+
+h2 {
+  color: black;
+  font-size: 35px;
+  text-shadow: 0.8px 0.8px #ff0000;
 }
 
 h2 a:link {
@@ -23,25 +49,14 @@ h2 a:hover {
   color: white;
 }
 
-body {
-  text-align: center;
-  font-family: sans-serif;
-  background-image: url('d&d3.jpg');
-  background-size: cover;
-  font-weight: 500;
-  color: red;
-  font-size: 20px;
-  margin: 0;
- }
-
- h2 {
-   color: black;
-   font-size: 25px;
-   text-shadow: 0.8px 0.8px #ff0000;
- }
+h3 {
+  color: black;
+  text-shadow: 0.8px 0.8px #ff0000;
+}
 
  div {
    margin-top: 2%;
+   margin-bottom: 2%;
  }
 
 .container {
@@ -118,13 +133,10 @@ nav a:hover::before {
 .form {
    margin-left: 30vw;
    margin-right: 30vw;
-   margin-top: 1.5%;
+   margin-top: 2%;
    text-align: left;
    padding-top: 5px;
- }
-
- .form input {
-   size: 50;
+   font-size: 20px;
  }
 
  table {
@@ -164,16 +176,6 @@ nav a:hover::before {
    text-align: left;
  }
 
- button a:link {
-   text-decoration: none;
-   color: black
- }
-
- button a:visited {
-   text-decoration: none;
-   color: black
- }
-
  td a:link {
    text-decoration: none;
    color: black;
@@ -190,8 +192,22 @@ nav a:hover::before {
    color: red;
  }
 
+ button a:link {
+   text-decoration: none;
+   color: black
+ }
+
+ button a:visited {
+   text-decoration: none;
+   color: black
+ }
+
  button a {
    text-shadow: 0.8px 0.8px #ff0000;
+ }
+
+ button a:hover {
+   color: red;
  }
 
  button {

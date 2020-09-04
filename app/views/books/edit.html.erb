@@ -17,12 +17,14 @@
 
   <%= form_with(local: true, method: :get, :url => add_spell_to_book_path) do |form| %>
   <div>
-      <%= form.label "Select Book: " %>
-      <%= form.select(:book_id, Book.select_books) %>
+    <h2>
+        <%= form.label "Select a book: " %>
+        <%= form.select(:book_id, Book.select_books) %>
+    </h2>
   </div>
       <%= form.hidden_field :spell_id, :value => @spell.id %>
   <div>
-      <%= form.submit "Submit" %>
+      <%= form.submit "Submit", :class => "button btn btn-default btn-lg" %>
   </div>
   <% end %>
 </body>

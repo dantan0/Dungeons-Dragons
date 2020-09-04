@@ -34,6 +34,7 @@
           </td>
           <td><button><%= link_to "Edit", edit_spell_path(spell) %></button></td>
           <td><button><%= link_to "Add to Book", edit_book_path(:id => spell.id)%></button></td>
+          <td><button><%= link_to "Delete", spells_destroy_path(:id => spell.id)%> </button></td>
       </tr>
       <% end %>
   </table>
